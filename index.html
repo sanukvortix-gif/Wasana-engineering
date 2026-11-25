@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+  // සල්ලි ගෙව්වට පස්සේ මේක false කරන්න
+  const isPaymentPending = true; 
+
+  if (isPaymentPending) {
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.innerHTML = `
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; font-family:sans-serif; text-align:center; background:#111; color:#fff; padding:20px;">
+          <h1 style="color:#ff4d4d;">Website Suspended / Payment Pending</h1>
+          <p style="max-width:500px; line-height:1.6;">Please complete the remaining payment to activate and unlock the full website.</p>
+        </div>
+      `;
+    });
+  }
+</script>
+
     <!-- =====================================================================
          WASANA ENGINEERING — CORPORATE COMPANY PROFILE & TECHNICAL PORTFOLIO
          Optimized for Executive Presentation (Desktop & Mobile)
